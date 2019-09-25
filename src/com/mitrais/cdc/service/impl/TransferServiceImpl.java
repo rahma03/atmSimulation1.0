@@ -80,9 +80,9 @@ public class TransferServiceImpl implements MenuService {
             destAccount = AccountListConstant.getAccount(input);
             if(destAccount !=null)
                 return true;
-            System.out.print("Invalid account");
+            System.out.println("Invalid account");
         }catch (NumberFormatException e){
-            System.out.print("Invalid account");
+            System.out.println("Invalid account");
         }
         return false;
     }
